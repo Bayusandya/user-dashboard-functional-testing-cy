@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-29T12:45:58.893Z",
+    "end": "2020-12-29T12:46:10.159Z",
+    "duration": 11266,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "40c939e4-8c6e-49a0-9b4a-1d7a736e56ae",
+      "title": "",
+      "fullFile": "cypress\\integration\\monitor-statistic\\date-picker.spec.js",
+      "file": "cypress\\integration\\monitor-statistic\\date-picker.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4626287e-582e-48cb-96df-cca7f94aa26c",
+          "title": "TC Date Picker",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-DatePicker-007",
+              "fullTitle": "TC Date Picker TC-DatePicker-007",
+              "timedOut": null,
+              "duration": 10676,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "bot.btnBot().next().click();\nbtnSidebar.btnStatistic().click();\ndatePickerPage.btnKalender().click();\ndatePickerPage.btnTanggal1().click();\ncy.wait(2000);",
+              "err": {},
+              "uuid": "0da3ea38-92ff-41c9-9d05-65b3ef36a01a",
+              "parentUUID": "4626287e-582e-48cb-96df-cca7f94aa26c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0da3ea38-92ff-41c9-9d05-65b3ef36a01a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10676,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

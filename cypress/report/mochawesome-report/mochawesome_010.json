@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-29T12:47:42.451Z",
+    "end": "2020-12-29T12:48:05.622Z",
+    "duration": 23171,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eea4ea22-93c7-44c1-8d59-79981b0ad899",
+      "title": "",
+      "fullFile": "cypress\\integration\\user-auth\\login.spec.js",
+      "file": "cypress\\integration\\user-auth\\login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+          "title": "User Auth - Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-Login-001",
+              "fullTitle": "User Auth - Login TC-Login-001",
+              "timedOut": null,
+              "duration": 3708,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'signIn');\nloginPage.headerFormLogin().should('be.visible').and('contain', 'Masuk');\nloginPage.fieldEmail().should('be.visible').and('be.empty');\nloginPage.fieldPassword().should('be.visible').and('be.empty');\nloginPage.btnChecklist().should('not.be.checked');\nloginPage.btnMasuk().should('be.visible').and('be.disabled');",
+              "err": {},
+              "uuid": "a1c5b1fe-7476-41b2-8d04-e208a43e07b5",
+              "parentUUID": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-Login-002",
+              "fullTitle": "User Auth - Login TC-Login-002",
+              "timedOut": null,
+              "duration": 1820,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.fieldEmail().click();\nloginPage.fieldPassword().type(this.userAuthData.registeredPassword);\nloginPage.btnMasuk().should('be.visible').and('be.disabled');\nloginPage.alert().should('be.visible').and('contain', 'Mohon masukan email anda');",
+              "err": {},
+              "uuid": "dd8da475-f078-4306-a265-b84dd2347e70",
+              "parentUUID": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-Login-003",
+              "fullTitle": "User Auth - Login TC-Login-003",
+              "timedOut": null,
+              "duration": 2231,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.fieldEmail().type(this.userAuthData.registeredEmail);\nloginPage.fieldPassword().click().tab();\nloginPage.btnMasuk().should('be.visible').and('be.disabled');\nloginPage.alert().should('be.visible').and('contain', 'Mohon masukan password anda');",
+              "err": {},
+              "uuid": "fe71d074-d58b-4875-afef-1e57fb1b2020",
+              "parentUUID": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-Login-004",
+              "fullTitle": "User Auth - Login TC-Login-004",
+              "timedOut": null,
+              "duration": 2023,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.fieldEmail().type(this.userAuthData.invalidEmail);\nloginPage.alert().should('be.visible').and('contain', 'Mohon masukan email dengan benar');",
+              "err": {},
+              "uuid": "7f5c888b-c385-4bdc-a7f0-37deaf297a38",
+              "parentUUID": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-Login-005",
+              "fullTitle": "User Auth - Login TC-Login-005",
+              "timedOut": null,
+              "duration": 4429,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.fieldEmail().type(this.userAuthData.unregisteredEmail);\nloginPage.fieldPassword().type(this.userAuthData.registeredPassword);\nloginPage.btnMasuk().should('be.enabled').click();\nloginPage.alertContent().should('be.visible').and('contain', 'Email yang Anda masukkan belum terdaftar');",
+              "err": {},
+              "uuid": "f72be034-bbf4-4397-b228-793f0ce4c831",
+              "parentUUID": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-Login-006",
+              "fullTitle": "User Auth - Login TC-Login-006",
+              "timedOut": null,
+              "duration": 4777,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.fieldEmail().type(this.userAuthData.registeredEmail);\nloginPage.fieldPassword().type(this.userAuthData.wrongPassword);\nloginPage.btnMasuk().should('be.enabled').click();\nloginPage.alertContent().should('be.visible').and('contain', 'Password yang Anda masukkan salah');",
+              "err": {},
+              "uuid": "2a93101b-459b-4698-bb2e-d0a95d33b8c6",
+              "parentUUID": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-Login-007",
+              "fullTitle": "User Auth - Login TC-Login-007",
+              "timedOut": null,
+              "duration": 3610,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.fieldEmail().type(this.userAuthData.registeredEmail);\nloginPage.fieldPassword().type(this.userAuthData.registeredPassword);\nloginPage.btnMasuk().should('be.enabled').click();\ncy.url().should('include', 'bot');\nloginPage.welcomingMessage().should('be.visible').and('contain', 'Selamat datang di platform chatbot Vutura, mulai buat chatbot sekarang.');\nloginPage.headlineChatbot().should('be.visible').and('contain', 'Chatbot Anda');\nloginPage.btnTambahChatbot().should('be.visible');",
+              "err": {},
+              "uuid": "6b4e5a51-b473-4537-9825-9ea1a1de1c22",
+              "parentUUID": "bdeec63f-9e26-44d5-ac9d-807aa6722323",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1c5b1fe-7476-41b2-8d04-e208a43e07b5",
+            "dd8da475-f078-4306-a265-b84dd2347e70",
+            "fe71d074-d58b-4875-afef-1e57fb1b2020",
+            "7f5c888b-c385-4bdc-a7f0-37deaf297a38",
+            "f72be034-bbf4-4397-b228-793f0ce4c831",
+            "2a93101b-459b-4698-bb2e-d0a95d33b8c6",
+            "6b4e5a51-b473-4537-9825-9ea1a1de1c22"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22598,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

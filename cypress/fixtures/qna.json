@@ -1,0 +1,11 @@
+{
+    "q1": "Pertanyaan?",
+    "a1": "Jawaban!",
+    "imgUrlJpgHttp": "http://filmindonesia.or.id/public/upload/img/movie/primary/title/kkndidesapenari-poster.jpg",
+    "imgUrlJpgHttps": "https://tinyjpg.com/images/social/website.jpg",
+    "searchQ": "debug",
+    "searchQNoData": "!@#$%^&*()",
+    "searchA": "botid",
+    "editQtext": "apa yang bisa kamu lakukan? (AT)",
+    "editAtext": "banyak hal (AT)"
+}

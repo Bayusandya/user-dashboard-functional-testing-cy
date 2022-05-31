@@ -1,0 +1,16 @@
+{
+    "baseUrl" : "https://dev-dashboard.vutura.io",
+    "viewportWidth": 1366,
+    "viewportHeight": 768,
+    "watchForFileChanges": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "charts": true,
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "reportDir": "cypress/report/mochawesome-report"
+    },
+    "projectId": "tgspnz"
+  }
+  

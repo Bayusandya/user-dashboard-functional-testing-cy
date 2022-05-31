@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "cypress:open": "cypress open",
+    "delete": "node deleteReports.js",
+    "test": "cypress run --reporter mochawesome --spec 'cypress/integration/user-auth/login.spec.js'",
+    "merging": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
+    "generate": "marge cypress/report/output.json --reportDir ./ --inline"
+  },
+  "name": "cy-functional-user-dashborad",
+  "description": "Automated functional testing with Cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.2.1"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^4.1.1",
+    "cypress-plugin-tab": "^1.0.5",
+    "faker": "^5.1.0",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/bayusandya/cy-user-dashboard-functional.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/bayusandya/cy-user-dashboard-functional/issues"
+  },
+  "homepage": "https://gitlab.com/bayusandya/cy-user-dashboard-functional#readme"
+}

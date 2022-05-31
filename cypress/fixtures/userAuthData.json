@@ -1,0 +1,18 @@
+{
+    "namaDepan": "Test Case",
+    "namaBelakang": "Signup",
+    "validEmail": "danke2@gmail.com",
+    "invalidEmail": "invalidemail",
+    "unregisteredEmail": "test@test.com",
+    "wrongPassword": "asdasdasdasdasdad",
+    "registeredEmail": "kirishima4444@gmail.com",
+    "registeredPassword": "landopinter",
+    "registeredEmail2": "baysandya@gmail.com",
+    "registeredPassword2": "landopinter",
+    "validPassword": "test123",
+    "invalidPassword": "asd",
+    "namaBisnis": "Testing",
+    "deskripsiBisnis": "Ini Test Signup",
+    "jenisBisnis": "Test Signup",
+    "website": "www.testsignup.com"
+}

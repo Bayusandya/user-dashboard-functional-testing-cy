@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-29T12:48:18.218Z",
+    "end": "2020-12-29T12:48:30.645Z",
+    "duration": 12427,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d0eb91b8-baf6-49ca-b651-f60ea36fc7e7",
+      "title": "",
+      "fullFile": "cypress\\integration\\user-auth\\logout.spec.js",
+      "file": "cypress\\integration\\user-auth\\logout.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "47687f87-8a4d-4e8a-805f-7df1834b9a73",
+          "title": "User Auth - Logout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-Logout-003",
+              "fullTitle": "User Auth - Logout TC-Logout-003",
+              "timedOut": null,
+              "duration": 12267,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "logoutPage.btnBot().should('be.visible').click();\ncy.url().should('include', 'qna');\nlogoutPage.hoverSetting().first().should('be.visible').click();\nlogoutPage.btnSignout().should('be.visible').click();\ncy.url().should('include', 'signIn');",
+              "err": {},
+              "uuid": "a30272fe-869a-475e-a1c2-e84f07a203cb",
+              "parentUUID": "47687f87-8a4d-4e8a-805f-7df1834b9a73",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a30272fe-869a-475e-a1c2-e84f07a203cb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12267,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
